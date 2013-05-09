@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>demo</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="css/search.css" rel="stylesheet" >
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	
+  <script type="text/javascript" src="customAlert.js"></script>
+	
+</head>
+
+<body>
+
+<div>
+
+<input type="button" onclick="alert('Alert Text!!!!');" value="alert" />
+<input type="button" value="confirm" />
+
+<!-- HTML and Style for alert -->
+<div class="customAlert" style="display:none;">
+  <div class="tishi_box">
+    <div class="tishi">
+      <input class="close tishi_close" name="" type="button"/>
+      <p class="message">保存成功!</p>
+      <input class="close tishi_enter tishi_enter1" name="" type="button" value="确定"/>
+    </div>
+  </div>
+</div>
+
+<!-- HTML and Style for confirm -->
+<div class="customAlert2" style="display:none;">
+  <div class="tishi_box">
+    <div class="tishi">
+      <input class="close tishi_close" name="" type="button"/>
+      <p class="message">这是历史的排班信息，是否要修改？</p>
+      <input class="yes tishi_enter tishi_enter2" name="" type="button" value="确定"/>
+      <input class="no tishi_enter tishi_cancel" name="" type="button" value="取消"/>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+  
+    $(".customAlert").customAlert();
+    
+    $("input[value='confirm']").bind("click", function() {
+    
+      $(".customAlert2").customAlert("confirm", {
+        "message": "Confirm?",
+        "yes": function() {
+          //console.log("yes");
+        },
+        "no": function() {
+          //console.log("no");
+        }
+      });
+    
+    });
+  
+	});
+
+</script>
+
+</body>
+</html>
