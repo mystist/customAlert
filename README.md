@@ -1,8 +1,8 @@
 ## Custom Alert & Confirm
 
-customAlert can help you customize your Alert & Confirm with your own CSS and HTML.
+`customAlert` can help you customize your Alert & Confirm with your own CSS and HTML.
 
-You can fell free to use it, modify it and share it with your friends.
+You can feel free to use it, modify it and share it with your friends.
 
 Contact me for more information:  
 
@@ -14,7 +14,7 @@ Contact me for more information:
 
 ### 2013-05-13
 Response to keyboard Enter.  
-You just need to tell your program on which element you want to focus after the alert, then customAlert will do it for you.
+You just need to tell your program on which element you want to focus after the alert, then `customAlert` will do it for you.
 
 ### 2013-05-09  
-Initial customAlert release.
+Initial `customAlert` release.
