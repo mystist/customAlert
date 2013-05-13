@@ -11,17 +11,27 @@
 
 (function($) {
 
+  var $originFocus = null;
+
   var methods = {
 
     init: function() {
     
-      var $this = this;
+      var $this = this;      
       window.alert = function(str) {
         $this.find(".message").html(str);
         $this.find(".close").unbind("click").bind("click", function() {
           $this.hide();
+          setTimeout(function() {
+            $originFocus.focus();
+          }, 500);
         });
-        $this.show();
+        setTimeout(function() {
+          $originFocus = $(document.activeElement);
+          $this.show();
+          $this.find(".close").last().focus();
+        }, 1);
+        
       }
       
     },
@@ -50,7 +60,7 @@
         $this.hide();
       });
       
-      $this.show();
+      $this.show().find(".yes").last().focus();
     
     }
 

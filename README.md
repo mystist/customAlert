@@ -12,5 +12,9 @@ Contact me for more information:
 
 ## Change Log
 
+### 2013-05-13
+Response to keyboard Enter.  
+Auto focus to the element that focusing before alert.
+
 ### 2013-05-09  
 Initial customAlert release.

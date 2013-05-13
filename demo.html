@@ -15,7 +15,9 @@
 
 <div>
 
-<input type="button" onclick="alert('Alert Text!!!!');" value="alert" />
+<input class="focus" type="text" />
+
+<input type="button" onclick="alert('Alert Text!!!!');$('.focus').focus();" value="alert" />
 <input type="button" value="confirm" />
 
 <!-- HTML and Style for alert -->
@@ -46,6 +48,8 @@
 <script type="text/javascript">
 
 	$(document).ready(function() {
+  
+    $(".focus").focus();
   
     $(".customAlert").customAlert();
     
