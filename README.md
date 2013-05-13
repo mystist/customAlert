@@ -14,7 +14,7 @@ Contact me for more information:
 
 ### 2013-05-13
 Response to keyboard Enter.  
-Auto focus to the element that focusing before alert.
+You just need to tell your program on which element you want to focus after the alert, then customAlert will do it for you.
 
 ### 2013-05-09  
 Initial customAlert release.
