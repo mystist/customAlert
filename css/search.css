@@ -1,9 +1,9 @@
 
+body{padding-bottom:20px;font:12px "宋体", "黑体";}
 
 
 
 
-.min_body{min-width:1110px;padding-bottom:20px;font:12px "宋体", "黑体";}
 .header{height:86px;font-size:14px; line-height:25px; color:#FFF; background:url(../images/header_bg.jpg) repeat-x;}
 .header_span{margin-top:14px;padding-left:60px; line-height:24px;background:url(../images/Mini.jpg) no-repeat 20px top;}
 .header em{margin:0 15px;height:25px;overflow:hidden}
@@ -25,51 +25,47 @@
 .main_p2 a:hover{color:#f00;text-decoration:underline;}
 
 .main_text{margin:0px 20px;padding-top:20px;min-width:910px;line-height:20px;overflow-x:auto;overFlow-y: hidden ;}
-.main_text em{ margin-left:20px; font-size:12px;color:#333;}
+.main_text em{ margin-left:20px; font-size:12px; color:#333;}
 .tr_c1{background:#fff;}
 .tr_c1 td{padding:4px 5px;min-width:40px;line-height:15px;background:#e8eff9;border:1px solid #b5c7d3;}
 
 .tr_c2{}
-.tr_c2 td{padding:4px 5px;line-height:15px;background:#ffffff;color:#292929;border:1px solid #b5c7d3;}
+.tr_c2 td{padding:4px 5px;line-height:15px;background:#ffffff; color:#292929;border:1px solid #b5c7d3;}
 
 .tr_c3{}
-.tr_c3 td{padding:4px 5px;line-height:15px;background:#ffffff;color:#292929;border-left:1px solid #b5c7d3;border-right:1px solid #b5c7d3;}
+.tr_c3 td{padding:4px 5px;line-height:15px;background:#ffffff; color:#292929;border-left:1px solid #b5c7d3;border-right:1px solid #b5c7d3;}
 
 .tr_c4{}
-.tr_c4 td{padding:4px 5px;line-height:15px;background:#f7f7f7;color:#292929;border-left:1px solid #b5c7d3;border-right:1px solid #b5c7d3;}
+.tr_c4 td{padding:4px 5px;line-height:15px;background:#f7f7f7; color:#292929;border-left:1px solid #b5c7d3;border-right:1px solid #b5c7d3;}
 
 .tr_c4_lineDown{border-bottom:1px solid #b5c7d3;}
 
-.tr_c4 .td_bc,.tr_c3 .td_bc{ background:#e6f0d7;color:#59891b;}
+.tr_c4 .td_bc,.tr_c3 .td_bc{ background:#e6f0d7; color:#59891b;}
 
-.table_sy{text-align:center;}
+.table_sy{ text-align:center;}
 .back{display:block;width:86px;margin:15px auto;}
 
 
 
-.gaoji_search{ margin-left:10px;margin-right:10px; padding-top:10px;color:#000;}
+.gaoji_search{ margin-left:10px;margin-right:10px; padding-top:10px; color:#000;}
 .gaoji_search input,.gaoji_search select{ margin:0;padding:0;}
 .main label{ float:left;margin-right:20px;}
-.main label select{ height:22px;line-height:22px; overflow:hidden}
+.main label select{ height:20px;line-height:20px; overflow:hidden}
 .main_text1{ width:85px; height:18px; line-height:18px;overflow:hidden}
 .main_text2{ width:35px; height:18px; line-height:18px;overflow:hidden}
 .gaoji_buttom{display:block;float:left;vertical-align:middle;}
 
-
-
-.hover{ background:#e8eff9;}
+.hover{ background:#F7F7F6;}
 .hover td{padding:4px 5px;line-height:15px;color:#292929;border:1px solid #b5c7d3;}
 
 
-.search_button{border:none;margin:9px 2px 0 2px;width:51px; height:22px; background:url(../images/button2.png)}
-
-
 /*提示弹出*/
-.tishi_box{position:absolute;top:50%;left:50%;margin-left:-172px;margin-top:-85px;width:345px; height:170px; font-family:黑体;}
-.tishi{width:338px; height:162px;-moz-border-radius:5px; /* Gecko browsers */ -webkit-border-radius:5px;   /* Webkit browsers */ border-radius:5px; /* W3C syntax */ border:2px solid #499adb;-webkit-box-shadow: #333 0px 3px 4px;-moz-box-shadow: #333 0px 3px 4px;box-shadow: #333 0px 3px 4px;behavior:url(css/tool_iecss3.htc); background:#FFF; position:relative;overflow:hidden;}
+.tishi_box{position:absolute;top:50%;left:50%;margin-left:-172px;margin-top:-85px;width:345px; height:170px; font-family:微软雅黑;}
+.tishi{width:338px; height:162px;-moz-border-radius:5px; /* Gecko browsers */ -webkit-border-radius:5px;   /* Webkit browsers */ border-radius:5px; /* W3C syntax */ border:2px solid #499adb;-webkit-box-shadow: #333 0px 3px 4px;-moz-box-shadow: #333 0px 3px 4px;box-shadow: #333 0px 3px 4px;behavior:url(../css/tool_iecss3.htc); background:#FFF; position:relative;overflow:hidden;}
+.tishi h1{margin-left:auto;margin-right:auto; margin-bottom:-30px;width:320px;height:30px; line-height:30px; font-size:14px; color:#3E6699;font-weight:bold;border-bottom:1px solid #ccc;}
 .tishi_close{ position:absolute;top:5px;right:5px; width:15px; height:15px;border:none; background:#FFF url(../images/close.png) no-repeat center;cursor:pointer;outline:none;blr:expression(this.onFocus=this.blur());/*IE去虚框*/}
-.tishi p{ font-size:12px; text-align:center; margin-top:50px;}
-.tishi_enter{/*padding:0;*/ width:86px; height:32px;border:1px solid #b0c1d4;-moz-border-radius:3px; /* Gecko browsers */ -webkit-border-radius:3px;   /* Webkit browsers */ border-radius:3px; /* W3C syntax */behavior:url(css/tool_iecss3.htc); background:#FFF;font-family:黑体;cursor:pointer;outline:none;blr:expression(this.onFocus=this.blur());/*IE7*/
+.tishi p{ font-size:13px; text-align:center; margin-top:50px;font-family:微软雅黑;}
+.tishi_enter{/*padding:0;*/ width:86px; height:32px;border:1px solid #b0c1d4;-moz-border-radius:3px; /* Gecko browsers */ -webkit-border-radius:3px;   /* Webkit browsers */ border-radius:3px; /* W3C syntax */behavior:url(css/tool_iecss3.htc); background:#FFF;font-family:微软雅黑;color:#3E6699; font-weight:bold;cursor:pointer;outline:none;blr:expression(this.onFocus=this.blur());/*IE7*/
 /*线性渐变linear-gradient（角度，背景色，填充范围越大越小，填充颜色，渐变比例好想仅有0%和100%）*/
 background: -moz-linear-gradient(top, #FFF 30%,#bfd2e9 100%); /* FF3.6+ */
 background: -webkit-gradient(top, #FFF 30%,#bfd2e9 100%);/*  Chrome,Safari4+ */
@@ -83,8 +79,4 @@ background: linear-gradient(top, #FFF 30%,#bfd2e9 100%); /* W3C */
 .tishi_enter2{position:absolute;top:88px;left:76px;}
 .tishi_cancel{position:absolute;top:88px;left:175px;}
 .tishi input:hover{margin-top:1px;}
-
-
-
-
 

@@ -17,13 +17,14 @@
 
 <input class="focus" type="text" />
 
-<input type="button" onclick="alert('Alert Text!!!!');$('.focus').focus();" value="alert" />
+<input type="button" value="alert" />
 <input type="button" value="confirm" />
 
 <!-- HTML and Style for alert -->
 <div class="customAlert" style="display:none;">
-  <div class="tishi_box">
+  <div class="tishi_box" style="z-index:9999;">
     <div class="tishi">
+      <h1 class="title">确认保存</h1>
       <input class="close tishi_close" name="" type="button"/>
       <p class="message">保存成功!</p>
       <input class="close tishi_enter tishi_enter1" name="" type="button" value="确定"/>
@@ -33,8 +34,9 @@
 
 <!-- HTML and Style for confirm -->
 <div class="customAlert2" style="display:none;">
-  <div class="tishi_box">
+  <div class="tishi_box" style="z-index:9999;">
     <div class="tishi">
+      <h1 class="title">确认修改</h1>
       <input class="close tishi_close" name="" type="button"/>
       <p class="message">这是历史的排班信息，是否要修改？</p>
       <input class="yes tishi_enter tishi_enter2" name="" type="button" value="确定"/>
@@ -51,12 +53,21 @@
   
     $(".focus").focus();
   
+    /* Custom Alert Start */
     $(".customAlert").customAlert();
     
+    $("input[value='alert']").bind("click", function() {
+      alert('This is a alert!', 'Alert Information:');
+      $('.focus').focus();
+    });
+    /* Custom Alert End */
+    
+    /* Custom Confirm Start */
     $("input[value='confirm']").bind("click", function() {
     
       $(".customAlert2").customAlert("confirm", {
         "message": "Confirm?",
+        "title": "Confirm Information:",
         "yes": function() {
           //console.log("yes");
         },
@@ -66,6 +77,7 @@
       });
     
     });
+    /* Custom Confirm End */
   
 	});
 

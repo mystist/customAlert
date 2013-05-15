@@ -12,6 +12,10 @@ Contact me for more information:
 
 ## Change Log
 
+### 2013-05-15
+Add options: title.  
+Now you can add your title in your Alert and Confirm!
+
 ### 2013-05-13
 Response to keyboard Enter.  
 You just need to tell your program on which element you want to focus after the alert, then `customAlert` will do it for you.

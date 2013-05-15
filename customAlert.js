@@ -18,8 +18,15 @@
     init: function() {
     
       var $this = this;      
-      window.alert = function(str) {
-        $this.find(".message").html(str);
+      window.alert = function(message, title) {
+      
+        $this.find(".message").html(message);
+        if(title) {
+          $this.find(".title").html(title).show();
+        } else {
+          $this.find(".title").html(title).hide();
+        }
+        
         $this.find(".close").unbind("click").bind("click", function() {
           $this.hide();
           setTimeout(function() {
@@ -40,6 +47,7 @@
     
       var defaults = {
         "message": "Confirm?",
+        "title": "",
         "yes": function() {},
         "no": function() {}
       };
@@ -48,6 +56,12 @@
       var $this = this;
       
       $this.find(".message").html(settings.message);
+      if(settings.title) {
+        $this.find(".title").html(settings.title).show();
+      } else {
+        $this.find(".title").hide();
+      }
+      
       $this.find(".close").unbind("click").bind("click", function() {
         $this.hide();
       });
