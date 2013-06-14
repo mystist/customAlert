@@ -12,6 +12,9 @@ Contact me for more information:
 
 ## Change Log
 
+### 2013-06-14
+Response to keyboard: `Enter`, `Esc`.
+
 ### 2013-05-15
 Add options: title.  
 Now you can add your title in your Alert and Confirm!

@@ -39,6 +39,12 @@
           $this.find(".close").last().focus();
         }, 1);
         
+        $this.find(".close").last().unbind("keydown").bind("keydown", function(e) {
+          if(e.keyCode==13) {
+            $(this).click();
+          }
+        });
+        
       }
       
     },
@@ -75,6 +81,16 @@
       });
       
       $this.show().find(".yes").last().focus();
+      
+      $this.find(".yes").last().unbind("keydown").bind("keydown", function(e) {
+        if(e.keyCode==13) {
+          settings.yes();
+          $(this).click();
+        } else if(e.keyCode==27) {
+          settings.no();
+          $this.find(".no").last().click();
+        }
+      });
     
     }
 
