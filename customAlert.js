@@ -35,8 +35,7 @@
         });
         setTimeout(function() {
           $originFocus = $(document.activeElement);
-          $this.show();
-          $this.find(".close").last().focus();
+          $this.show().find(".close").last().focus();
         }, 1);
         
         $this.find(".close").last().unbind("keydown").bind("keydown", function(e) {
@@ -80,8 +79,10 @@
         $this.hide();
       });
       
-      $this.show().find(".yes").last().focus();
-      
+      setTimeout(function() {
+        $this.show().find(".yes").last().focus();
+      }, 1);
+
       $this.find(".yes").last().unbind("keydown").bind("keydown", function(e) {
         if(e.keyCode==13) {
           settings.yes();
